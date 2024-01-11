@@ -232,6 +232,7 @@ class usercontroller extends Controller
             $updatestock->save();
         }
         session()->forget('Datacart);
+        return redirect('/');
         echo "berhasil";
     }
 
