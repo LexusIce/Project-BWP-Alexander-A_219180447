@@ -231,6 +231,7 @@ class usercontroller extends Controller
             $updatestock[0]->JumlahStock = $tempjumstock;
             $updatestock->save();
         }
+        session()->forget('Datacart);
         echo "berhasil";
     }
 
